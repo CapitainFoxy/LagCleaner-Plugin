@@ -1,0 +1,3 @@
+enabled: true
+interval-minutes: 5
+warning-seconds: 10
