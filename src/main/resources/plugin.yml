@@ -1,0 +1,5 @@
+name: LagCleaner
+author: CapitainFoxy
+version: 1.0
+main: com.capitainfoxy.lagcleaner.LagCleanerPlugin
+api-version: 1.16
