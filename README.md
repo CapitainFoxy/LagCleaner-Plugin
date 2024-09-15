@@ -11,15 +11,25 @@
 
 ## Installation
 
-1. **Download** the latest release of the plugin JAR file.
-2. **Place** the JAR file into your Minecraft server's `plugins` directory.
-3. **Restart** your server to enable the plugin.
+1. **Clone** or **download** the repository.
+
+2. **Build** the plugin using Maven:
+    ```sh
+    mvn clean package
+    ```
+
+3. **Download** the generated JAR file from the `target` directory.
+
+4. **Place** the JAR file into your Minecraft server's `plugins` directory.
+
+5. **Restart** your server to enable the plugin.
 
 ## Configuration
 
-After installation, you can configure the plugin by editing the `config.yml` file located in the `plugins/LagCleaner` directory. The default configuration file looks like this:
+After installation, configure the plugin by editing the `config.yml` file located in the `plugins/LagCleaner` directory. The default configuration file looks like this:
 
 ```yaml
 enabled: true
 interval-minutes: 5
 warning-seconds: 10
+
