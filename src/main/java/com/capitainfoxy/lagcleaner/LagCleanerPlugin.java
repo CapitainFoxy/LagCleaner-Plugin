@@ -12,8 +12,8 @@ public class LagCleanerPlugin extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
         if (getConfig().getBoolean("enabled")) {
-            long interval = getConfig().getInt("interval-minutes") * 60 * 20L; // Convert minutes to ticks
-            long warningTime = getConfig().getInt("warning-seconds") * 20L; // Convert seconds to ticks
+            long interval = getConfig().getInt("interval-minutes") * 60 * 20L;
+            long warningTime = getConfig().getInt("warning-seconds") * 20L; 
 
             Bukkit.getScheduler().runTaskTimer(this, () -> {
                 Bukkit.broadcastMessage(ChatColor.RED + "Warning: Items will be removed in " + getConfig().getInt("warning-seconds") + " seconds!");
